@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> GreenBank</h1>
+            <p>Olá,<strong>Gertrudes Silva</strong> | Saldo: R$4.250,00</p>
+        </header>
+        <section class="extrato">
+            <h2>Transações Recentes</h2>
+            <table>
+                <tbody>
+                    <thead>
+
+                    <tr>
+            <th>Data</th>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Valor</th>
+                    </tr>
+
+                    </thead>
+
+                <tr>
+                    <td>06/09/2026</td>
+                    <td>Supermercado Dona</td>
+                    <td>Alimentacao</td>
+                    <td class="valor-negativo">- R$ 250,00</td>
+                </tr>
+
+                <tr>
+                    <td>04/09/2026</td>
+                    <td>Netflix</td>
+                    <td>Streaming</td>
+                    <td class="valor-negativo">- R$ 20,90</td>
+                </tr>
+
+                <tr>
+                    <td>02/09/2026</td>
+                    <td>Banca do Zé Couve</td>
+                    <td>Alimentação</td>
+                    <td class="valor-negativo">- R$ 60,00</td>
+                </tr>
+                
+                <tr>
+                    <td>01/09/2026</td>
+                    <td>Salário Mensal</td>
+                    <td>Renda</td>
+                    <td class="valor-positivo">+ R$ 5.000,00</td>
+                </tr>
+
+                <tr>
+                    <td>31/09/2026</td>
+                    <td>Smartfit</td>
+                    <td>Academia</td>
+                    <td class="valor-negativo">+ R$ 120,00</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+
+ESTILO.CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(170, 209, 253);
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+.container {
+    background-color: rgb(50, 122, 204);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    box-shadow: 0px 20px 20px #928bff;
+    border-radius: 28px;
+    border: 2px solid #090357;
+}
+
+header {
+    margin-bottom: 40px;
+    border-left: 4px solid #ffe031;
+    padding-left: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    color: #090357;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #928bff;
+}
+
+td {
+    padding: 15px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #090357;
+}
+
+tbody tr {
+    transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+    cursor: pointer;
+    background-color: #09035655;
+}
